@@ -12,7 +12,7 @@ void print_chart(data_calculo_t *data, data_static_calcule_t *data_static)
 	int i;
 	for(i = 0; i < data_static->iteracao; i++, data++)
 	{
-		printf("%i |%.2lf|%.2lf\t|%.2lf\t|%.2lf\t|%.2lf\t|%.2lf\t|%.2c\t|%c\t|\n", data_static->iteracao, data->a, data->b, data->m, data->fA, data->fB, data->fM, data->fAfM, data->fMfB);
+		printf("%i |%.2lf|%.2lf\t|%.2lf\t|%.2lf\t|%.2lf\t|%.2lf\t|%.2c\t|%c\t|\n", i + 1, data->a, data->b, data->m, data->fA, data->fB, data->fM, data->fAfM, data->fMfB);
 	}
 }
 
