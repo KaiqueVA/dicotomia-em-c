@@ -8,7 +8,6 @@ void aloca_vet(double **calculo, uint8_t tamanho)
         printf("Erro ao alocar memoria para o vetor de fatores multiplicadores.\n");
         exit(1);
     }
-    printf("alocou o vetor!\n");
 }
 
 void aloca_struct(data_calculo_t **calcule, uint32_t tamanho)
@@ -19,6 +18,5 @@ void aloca_struct(data_calculo_t **calcule, uint32_t tamanho)
         printf("Erro ao alocar memoria para a struct de calculo.\n");
         exit(1);
     }
-    printf("alocou a struct!\n");
 }
 
