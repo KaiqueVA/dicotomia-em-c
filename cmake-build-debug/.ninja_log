@@ -1,0 +1,7 @@
+# ninja log v5
+4	78	7347533302168755	CMakeFiles/CLion.dir/main.c.obj	8cfb94a941717b95
+4	246	7347543183416785	build.ninja	400b0ab894dc87d0
+8	83	7347533302248825	CMakeFiles/CLion.dir/calculo.c.obj	93d975314bdb6745
+71	152	7347533608818459	CLion.exe	e32fe1f13e4c78a2
+14	85	7347533302258835	CMakeFiles/CLion.dir/allocation.c.obj	a251103a64edb301
+4	70	7347533608037750	CMakeFiles/CLion.dir/exibicao.c.obj	e333c1f25d684643

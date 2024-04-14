@@ -9,14 +9,12 @@
 #include "allocation.h"
 
 
-int main()
-{
+int main() {
     char op;
     data_calculo_t *calculo = NULL;
     data_static_calcule_t calcule_static;
 
-    do
-    {
+    do {
         system("cls");
         print_informe_valor(calculo, &calcule_static);
 
@@ -37,9 +35,8 @@ int main()
 
         printf("Deseja realizar outra operacao? (S/N): ");
         scanf(" %c", &op);
-    }while(op == 'S' || op == 's');
+    } while (op == 'S' || op == 's');
 
 
     return 0;
 }
-

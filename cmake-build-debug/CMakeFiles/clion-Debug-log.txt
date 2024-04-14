@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\Kaique\OneDrive\Documentos 1\Programas\Programas em C Familia\C\CLion\dicotomia-em-c Select CMakeLists.txt

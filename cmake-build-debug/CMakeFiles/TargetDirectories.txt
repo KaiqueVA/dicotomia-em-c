@@ -1,0 +1,3 @@
+C:/Users/Kaique/OneDrive/Documentos 1/Programas/Programas em C Familia/C/CLion/dicotomia-em-c/Dicotomia/cmake-build-debug/CMakeFiles/CLion.dir
+C:/Users/Kaique/OneDrive/Documentos 1/Programas/Programas em C Familia/C/CLion/dicotomia-em-c/Dicotomia/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Kaique/OneDrive/Documentos 1/Programas/Programas em C Familia/C/CLion/dicotomia-em-c/Dicotomia/cmake-build-debug/CMakeFiles/rebuild_cache.dir
