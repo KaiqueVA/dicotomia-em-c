@@ -20,7 +20,7 @@ void print_informe_valor(data_calculo_t *data, data_static_calcule_t *data_stati
 {
 	int i;
 	uint32_t k_aux;
-	double a_aux, b_aux;
+
 
 	printf("Informe o grau da funcao (2 a 6): ");
 	scanf("%d", &data_static->grau);
@@ -40,19 +40,16 @@ void print_informe_valor(data_calculo_t *data, data_static_calcule_t *data_stati
 	data_static->vet_multi = data_static->vet_multi_aux;
 
 	printf("Informe o valor de a: ");
-	scanf("%lf", &a_aux);
+	scanf("%lf", &data_static->a_aux);
 	printf("Informe o valor de b: ");
-	scanf("%lf", &b_aux);
+	scanf("%lf", &data_static->b_aux);
 
 	printf("Informe o valor da precisao desejada: ");
 	scanf("%lf", &data_static->precisao);
 
-	calculaValorK(a_aux, b_aux, data_static);
+	calculaValorK(data_static->a_aux, data_static->b_aux, data_static);
 
-	aloca_struct(&data, data_static->iteracao);
 
-	data->a = a_aux;
-	data->b = b_aux;
 }
 
 void print_function(data_calculo_t *data, data_static_calcule_t *data_static)

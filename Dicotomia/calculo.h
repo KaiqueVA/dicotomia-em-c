@@ -23,6 +23,8 @@ typedef struct
 	uint8_t grau;
 	uint32_t iteracao;
 	double precisao;
+	double a_aux;
+	double b_aux;
 	double *vet_multi;
 	double *vet_multi_aux;
 }data_static_calcule_t;

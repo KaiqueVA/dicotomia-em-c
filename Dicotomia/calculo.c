@@ -32,46 +32,43 @@ void calculaValorK(double a, double b, data_static_calcule_t *calcule_static)
 void zero_in_function(data_calculo_t *calculo, data_static_calcule_t *calcule_static)
 {
     int i;
-    double a_aux, b_aux;
+    double a_aux = 0, b_aux = 0, m_aux = 0;
 
     for(i = 0; i < calcule_static->iteracao; i++, calculo++)
     {
         a_aux = calculo->a;
         b_aux = calculo->b;
-
         calculo->m = (calculo->a + calculo->b)/2;
-        printf("a: %lf | b: %lf | m: %lf\n\n", a_aux, calculo->b, calculo->m);
         calculo->fA = funcaoX(calcule_static, calculo->a);
         calculo->fB = funcaoX(calcule_static, calculo->b);
 
         calculo->fM = funcaoX(calcule_static, calculo->m);
-        if((calculo->fA * calculo->fM) > 0)
+        if(calculo->fA * calculo->fM > 0)
         {
             calculo->fAfM = '+';
+            m_aux = calculo->m;
             calculo++;
-            calculo->a = a_aux;
-            calculo--;
-        }
-        else
-        {
-            calculo->fAfM = '-';
-            calculo++;
-            calculo->b = calculo->m;
-            calculo--;
-        }
-        if((calculo->fM * calculo->fB) > 0)
-        {
-            calculo->fMfB = '+';
-            calculo++;
+            calculo->a = m_aux;
             calculo->b = b_aux;
             calculo--;
         }
         else
         {
-            calculo->fMfB = '-';
+            calculo->fAfM = '-';
+        }
+        if((calculo->fM * calculo->fB) > 0)
+        {
+            calculo->fMfB = '+';
+            m_aux = calculo->m;
             calculo++;
-            calculo->a = calculo->m;
+            calculo->b = m_aux;
+            calculo->a = a_aux;
             calculo--;
+        }
+        else
+        {
+            calculo->fMfB = '-';
+
         }
     }
 }
